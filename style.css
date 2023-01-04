@@ -13,10 +13,15 @@
 }
 
  /*Buttons*/
- 
+
 body{
     margin: 0;
     font-family: "Poppins",sans-serif;
+}
+
+.wrapper{
+    max-width: 1134px;
+    margin: 0 auto;
 }
 
 .btn{
@@ -49,4 +54,53 @@ body{
 
 .btn.btn.enrol-icon{
     padding-left: 60px;
+}
+
+/* Header */
+
+header{
+    background: linear-gradient(180deg, #6F7DFB 0%, #26308C 100%);
+    height: 100vh;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 1134px; ;
+    top: 36px;
+    z-index: 1000;
+}
+nav .logo{
+    font-family: "Raleway",sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    color: #FFFFFF;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li a{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* Hero section */
+
+.hero-section{
+    display: flex; /*elements place next to other*/
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
 }
