@@ -1,8 +1,52 @@
 :root {
     --orange-color: #da722c;
-    --dark-blue-color: #057ADA;
-    --drak-color: #023047;
+    --dark-blue-color: #023047;
+    --drak-color: #070917;
     --light-color: #E8F7FB;
     --light-blue-color: #6F7DFB;
 
+}
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+ /*Buttons*/
+ 
+body{
+    margin: 0;
+    font-family: "Poppins",sans-serif;
+}
+
+.btn{
+    padding: 16px 32px;
+    border-radius: 24px;
+    color: white;
+    display:inline-block;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    position: relative;
+}
+.btn.dark{
+    background: var(--dark-blue-color);
+
+}
+
+.btn.light{
+    background: var(--orange-color);
+}
+
+.btn.enrol-icon::before{
+    content:url("images/enrol-icon.svg") ;
+    position:absolute;
+    top:50%;
+    left:32px;
+    transform: translateY(-50%);
+
+}
+
+.btn.btn.enrol-icon{
+    padding-left: 60px;
 }
