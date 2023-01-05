@@ -30,7 +30,7 @@ body{
     color: white;
     display:inline-block;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
     text-decoration: none;
     position: relative;
 }
@@ -71,7 +71,7 @@ nav{
     position: fixed;
     width: 1134px; ;
     top: 36px;
-    z-index: 1000;
+    z-index: 100;
 }
 nav .logo{
     font-family: "Raleway",sans-serif;
@@ -103,4 +103,75 @@ nav ul li a{
     width: 100%;
     align-items: center;
     justify-content: space-between;
+    padding-top: 60px;
+}
+
+.hero-section .left h1{
+    font-family: 'Raleway',sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 125%;
+    color: #FFFFFF;
+    margin-bottom:0;
+}
+
+.hero-section .left p{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.hero-section .left{
+    width: 457px;
+}
+
+.hero-section .right{
+    align-self: flex-end;
+}
+
+
+.hero-section .right img{
+    height: 520px;
+    vertical-align: middle;
+}
+
+
+
+/* achievement card */
+
+.achievement-card{
+    position: absolute;
+}
+.achievement-card .content{
+    border-radius: 24px;
+    background-color: #FFFFFF;
+    padding:8px 32px ;
+
+}
+
+.achievement-card.students-enrolled{
+    left: 47%;
+    top: 330px;
+}
+
+.achievement-card h3{
+    font-family: 'Poppins',sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--dark-blue-color);
+    margin: 0;
+    text-align: center;
+}
+
+.achievement-card p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    color: #023047;
+
 }
