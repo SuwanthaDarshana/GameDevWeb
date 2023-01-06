@@ -70,9 +70,20 @@ nav{
     align-items: center;
     position: fixed;
     width: 1134px; ;
-    top: 36px;
+    padding: 36px 0;
+    top: 0;
     z-index: 100;
+    transition: all 500ms ease;
 }
+
+nav.scrolled {
+    background: var(--drak-color);
+    box-shadow: 0 16px 14px -8px rgba(0, 0, 0, 0.3);
+    border-radius: 0 0 8px 8px;
+    top: 0;
+    padding: 12px;
+}
+
 nav .logo{
     font-family: "Raleway",sans-serif;
     font-weight: 900;
