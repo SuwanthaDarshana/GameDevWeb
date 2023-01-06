@@ -244,7 +244,27 @@ section p{
     box-shadow: 0px 9px 36px rgba(0, 0, 0, 0.2);
     border-radius: 24px;
     margin-bottom: 50px;
+    position: relative;
 }
+
+.testimonials-section .testimonial-card::before{
+    content: "";
+    width: 28px;
+    position: absolute;
+    height: 40px;
+    top: -40px;
+    left: 60px;
+    background: var(--dark-blue-color);
+    border-radius: 24px 24px 0 0;
+}
+.testimonials-section .testimonial-card:last-child::before {
+    left: 40px;
+    top: -50px;
+    border-radius: 0 0 24px 24px;
+    height: calc(100% + 90px);
+    z-index: -1;
+}
+
 
 .testimonials-section .testimonial-card .content{
     font-family: "Raleway",sans-serif;
@@ -255,4 +275,47 @@ section p{
     border-radius: 24px;
     padding: 24px 32px;
     background: var(--light-blue-color);
+}
+
+.testimonials-section .testimonial-card:last-child .content{
+    background: var(--orange-color);
+}
+
+.testimonials-section .testimonial-card .info h4{
+    font-family: 'Raleway',sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 120%;
+    margin: 0;
+    color: var(--dark-blue-color)
+}
+
+.testimonials-section .testimonial-card .info{
+    padding: 24px 32px;
+    background: #FFFFFF;
+    border-radius: 24px;
+}
+
+.testimonials-section .testimonial-card .info p.company{
+    font-family: 'Raleway',sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: var(--dark-blue-color)
+}
+
+.testimonials-section .testimonial-card img{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    right: 32px;
+    bottom: 20px;
+}
+
+.testimonials-section .testimonial-card:last-child{
+    transform: translateX(20px)
+}
+
+.testimonials-section .features{
+    margin-bottom: 30px;
 }
