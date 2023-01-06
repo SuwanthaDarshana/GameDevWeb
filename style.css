@@ -319,3 +319,85 @@ section p{
 .testimonials-section .features{
     margin-bottom: 30px;
 }
+
+/* Courses section */
+
+.courses-section {
+    background: linear-gradient(180deg, #6F7DFB 0%, #26308C 100%);
+    padding: 70px 0;
+    padding-bottom: 120px;
+}
+
+.courses-section h2{
+    text-align: center;
+}
+
+.courses-section .course-cards {
+    display: flex;
+    gap: 70px;
+}
+
+.courses-section .course-cards img{
+    width: 100%;
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25));
+    border-radius: 24px;
+}
+
+.courses-section .course-card {
+    background: #FFFFFF;
+    border-radius: 24px;
+    padding: 0px 32px;
+    margin: 40px 0;
+    position: relative;
+}
+
+.courses-section .course-card::after {
+    content: "";
+    height: 8px;
+    left: 32px;
+    right: 32px;
+    bottom: 0;
+    background: var(--dark-blue-color);
+    border-radius: 24px;
+    position: absolute;
+}
+
+.courses-section .course-card h3{
+    font-family: "Raleway",sans-serif;
+    font-weight: 900;
+    color: var(--dark-blue-color);
+}
+
+.courses-section .course-card .info {
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.courses-section .course-card .duration {
+    font-family: 'Raleway',sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 150%;
+    white-space: nowrap;
+    color: var(--dark-blue-color);
+    position: relative;
+    padding-left: 20px;
+}
+
+.courses-section .course-card .duration::before{
+    content: url(images/clock.svg);
+    position: absolute;
+    top: 2px;
+    left: -6px;
+
+}
+
+.courses-section .wrapper {
+    position: relative;
+}
+.courses-section .wrapper .btn {
+    position: absolute;
+    right: 0;
+}
