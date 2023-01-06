@@ -401,3 +401,114 @@ section p{
     position: absolute;
     right: 0;
 }
+
+/* App section */
+
+.app-section {
+     text-align: center;
+}
+
+.app-section .app-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 24px;
+}
+
+.app-section .app-btn{
+    padding: 20px 31px;
+    background: #000;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-width: 310px;
+}
+
+.app-section .app-btn span {
+    font-family: 'Poppins',sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+/* Footer */
+footer {
+    background: var(--drak-color);
+    color: #FFFFFF;
+    margin-top: 100px;
+    padding: 70px 70px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+footer h3 {
+    color: var(--orange-color);
+}
+
+footer ul{
+    list-style: none;
+    padding-left: 20px;
+}
+
+footer ul li{
+    margin: 16px 0;
+}
+
+footer .links-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr 3fr;
+}
+
+footer .social {
+    margin-left: 20px;
+}
+
+footer .social a{
+    margin-right: 28px;
+}
+
+footer form {
+    margin-left: 20px;
+    margin-top: 16px1;
+    position: relative;
+}
+
+footer form input {
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 200%;
+    border-radius: 8px;
+    padding: 8px 32px;
+    border: none;
+    width: 100%;
+    color: #000000;
+   
+}
+
+footer form .submit-btn {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--dark-blue-color);
+    border-radius: 8px;
+    padding: 8px 32px;
+    border: none;
+
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
+
+}
+
+footer .copyright{
+    margin-top: 36px;
+}
