@@ -523,3 +523,8 @@ footer form .submit-btn {
 footer .copyright{
     margin-top: 36px;
 }
+
+
+@media(max-width:1100px) {
+    
+}
