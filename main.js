@@ -18,6 +18,6 @@ menuIcon.addEventListener("click", () => {
     mobileMenuContainer.classList.add("active");
 });
 
-closeIcon.addEventListener("clicl",() =>{
+closeIcon.addEventListener("click",() =>{
     mobileMenuContainer.classList.remove("active");
 });
